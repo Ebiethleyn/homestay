@@ -1,0 +1,24 @@
+.unique-carousel-item img {
+  width: 100%;
+  height: calc(20vw); /* 20% of viewport width */
+  object-fit: cover;
+}
+.unique-carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .unique-carousel-item img {
+    height: calc(30vw); /* Tinggi lebih besar pada layar kecil untuk proporsi */
+  }
+  .unique-carousel-caption {
+    font-size: 1rem; /* Ukuran font lebih kecil */
+  }
+}
